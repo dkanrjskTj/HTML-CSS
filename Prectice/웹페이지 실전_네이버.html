@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+        header {
+            width: 100%;
+            overflow: hidden;
+        }
+        #header_nav {
+            width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #header_nav ul {
+            float: right;
+            margin-top: 20px;
+        }
+        #header_nav ul li {
+            font-size: 70%;
+            list-style: none;
+            margin-left: 10px;
+            float: left;
+        }
+        #header_nav ul li a {
+            text-decoration: none;
+            color: #757575;
+        }
+        #header_info {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #header_info div {
+            margin-top: 8px;
+            float: left;
+        }
+        #header_info .search input {
+            width: 467px; height: 48px;
+            font-size: 20px;
+            border: 3px solid #20ca5f;
+            box-sizing: border-box;
+            float: left;
+            margin-top: 17px; outline: none;
+        }
+        #header_info .btn_search {
+            width: 48px; height: 48px;
+            background: no-repeat;
+            border: 0;
+            margin-top: 17px; 
+        }
+        #main_nav {
+            width: 1000px; height: 48px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 1px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #main_nav { margin-top: 40px; }
+        #main_nav .nav_item, .nav_favoritelist { line-height: 48px; }
+        #main_nav .nav_item ul { margin-left: 20px; }
+        #main_nav .nav_item ul li {
+            color: #20ca5f;
+            font-size: 90%;
+            font-weight: bold;
+            list-style: none;
+            margin-right: 10px;
+            float: left;
+        }
+        #main_nav .nav_favoritelist ul li {
+            color: black;
+            font-size: 90%;
+            font-weight: bold;
+            list-style: none;
+            margin-right: 10px;
+            float: left;
+        }
+        #content {
+            width: 1000px; height: 400px; overflow: hidden;
+            margin: 0 auto; border: 1px solid #dadada;
+        }
+        #content { margin-top: 18px;}
+        .main_content {
+            float: left;
+        }
+        .main_content div:first-child {
+            width: 663px; height: 117px;
+            border: 1px solid #757575; box-sizing: border-box;
+        }
+        .main_content div:nth-child(2) {
+            width: 663px; height: 42px;
+            border: 1px solid #757575;
+            margin-top: 12px; box-sizing: border-box;
+        }
+        .main_content div:nth-child(3) {
+            width: 663px; height: 267px;
+            border: 1px solid #757575;
+            margin-top: 12px; box-sizing: border-box;
+        }
+        .side_banner {
+            float: right;
+        }
+        .side_banner div:first-child {
+            width: 310px; height: 117px;
+            border: 1px solid #757575;
+        }
+        .side_banner div:nth-child(2) {
+            width: 310px; height: 42px;
+            border: 1px solid #757575;
+            margin-top: 12px;
+        }
+        .side_banner div:nth-child(3) {
+            width: 310px; height: 267px;
+            border: 1px solid #757575;
+            margin-top: 12px;
+        }
+        footer {
+            width: 1000px; margin: 0 auto;
+        }
+        .footer_nav {
+            width: 1000px; height: 40px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 1px;
+            margin-top: 12px;
+            overflow: hidden;
+        }
+        .footer_nav div:first-child {
+            float: left;
+            font-size: 80%;
+            font-weight: bold;
+            line-height: 40px;
+        }
+        .footer_nav div:nth-child(2) {
+            float: right;
+            font-size: 80%;
+            font-weight: bold;
+            line-height: 40px;
+        }
+        .footer_main {
+            width: 1000px; height: 93px;
+            border-bottom: 1px #ccc;
+            box-sizing: border-box;
+        }
+        .footer_main {
+            height: 93px; margin-top: 22px;
+        }
+        .footer_main ul li {
+            list-style: none;
+            font-size: 80%;
+            font-weight: bold;
+            padding: 1px; line-height: 20px;
+        }
+        .footer_bottom { 
+            overflow: hidden; border-top: 1px solid #ccc; padding-top: 22px;
+        }
+        .footer_bottom ul li {
+            font-size: 70%; list-style: none; color: #757575;
+            float: left; border-right: 1px solid #757575;
+            margin-right: 10px; padding-right: 10px;
+        }
+        .footer_bottom div {
+            font-size: 70%; color: black; font-weight: bold; 
+            float: left; margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header_nav">
+            <ul>
+                <li><a href="NM_set_home_btn" href="https://help.naver.com/support/welcomePage/guide.help">네이버를 시작페이지로</a>
+                <li><a href="https://jr.naver.com">쥬니어네이버</a>
+                <li><a href="https://happybean.naver.com">해피빈</a></li>
+            </ul>
+        </div>
+        <div id="header_info">
+            <div class="logo"><img src="naver logo2.JPG" alt="naver logo"/></div>
+            <div class="search">
+                <input type="text"/>
+                <button type="submit" class="btn_search">
+                <span class="txt_sw"></span><img src="naver_btn.jpg" alt="btn_image"/></button>
+            </div>
+        </div>
+    </header>
+    <div id="main_nav">
+        <div class="nav_item">
+            <ul>
+                <li>메일</li>
+                <li>카페</li>
+                <li>블로그</li>
+                <li>지식IN</li>
+                <li>쇼핑</li>
+                <li>쇼핑LIVE</li>
+                <li>Pay</li>
+                <li>TV</li>
+            </ul>
+        </div>
+        <div class="nav_favoritelist">
+            <ul>
+                <li>사전</li>
+                <li>뉴스</li>
+                <li>증권</li>
+                <li>부동산</li>
+                <li>지도</li>
+                <li>VIBE</li>
+                <li>책</li>
+                <li>웹툰</li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div class="main_content">
+            <div>main topic</div>
+            <div>main topic</div>
+            <div>main topic</div>
+        </div>
+        <div class="side_banner">
+            <div>side banner</div>
+            <div>side banner</div>
+            <div>side banner</div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_nav">
+            <div>공지사항</div>
+            <div>서비스 전체보기></div>
+        </div>
+        <div class="footer_main">
+            <ul>
+                <li>Crestors</li>
+                <li>Partners</li>
+                <li>Developers</li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <ul>
+                <li>회사소개</li>
+                <li>인재채용</li>
+                <li>제휴제안</li>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+                <li>청소년보호정책</li>
+                <li>네이버 정책</li>
+                <li>고객센터</li>
+            </ul>
+            <div>ⓒ NAVER Corp.</div>
+        </div>
+    </footer>
+</body>
+</html>
